@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="invitado"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-07 03:45:15 p. m."/>
+        <attribute name="created" value="aW52aXRhZG87TEFCMDIwNDIzOzIwMjQtMDMtMDc7MDM6MzI6NDcgcC4gbS47MjgzNw=="/>
+        <attribute name="edited" value="aW52aXRhZG87TEFCMDIwNDIzOzIwMjQtMDMtMDc7MDM6NDU6MTUgcC4gbS47MTsyOTQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="VENTAS" type="Integer" array="False" size=""/>
+            <declare name="CalcularSaldo" type="Integer" array="False" size=""/>
+            <output expression="&quot;Introduce la cantidad de piezas que quieres comprar: &quot;" newline="True"/>
+            <input variable="VENTAS"/>
+            <if expression="VENTAS &gt; 1000">
+                <then>
+                    <assign variable="CalcularSaldo" expression="VENTAS * 500"/>
+                </then>
+                <else>
+                    <assign variable="CalcularSaldo" expression="VENTAS * 800"/>
+                </else>
+            </if>
+            <output expression="&quot;El saldo es&quot;" newline="True"/>
+            <output expression="CalcularSaldo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
