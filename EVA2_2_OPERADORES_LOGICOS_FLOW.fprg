@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="invitado"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 03:52:05 p. m."/>
+        <attribute name="created" value="aW52aXRhZG87TEFCMDIwNDIzOzIwMjQtMDMtMDY7MDM6NDM6NTkgcC4gbS47Mjg0MQ=="/>
+        <attribute name="edited" value="aW52aXRhZG87TEFCMDIwNDIzOzIwMjQtMDMtMDY7MDM6NTI6MDUgcC4gbS47MTsyOTQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Calificacion" type="Real" array="False" size=""/>
+            <output expression="&quot;Introduce una tu calificacion:&quot;" newline="True"/>
+            <input variable="Calificacion"/>
+            <if expression="Calificacion &gt;= 70">
+                <then>
+                    <output expression="&quot;ACREDITASTE&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Mejor suerte para la otra amiguito&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
